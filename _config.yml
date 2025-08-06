@@ -13,14 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+title: Emil Jebastin – Technical Writer
+email: emiljebastin07@gmail.com
+description: >- 
+  A technical writing portfolio that shows my skills in creating clear and structured content using DITA, S1000D, Markdown, and API documentation. It includes real project samples and highlights my ability to write user-friendly and accurate documentation. I’m moving from Aviation to Software and Semiconductor industries.
+twitter_username: emiljebastin
+github_username: emiljebastin
 minimal_mistakes_skin: default
 search: true
 
@@ -58,22 +56,19 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Emil Jebastin"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Technical Writer | S1000D | DITA | Markdown | Agile"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-linkedin"
+      url: "www.linkedin.com/in/emil-tech-writer"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/emiljebastin"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:emiljebastin07@gmail.com"
 
 footer:
   links:
@@ -113,3 +108,34 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+  # Navigation Links
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Projects"
+    url: /projects/
+  - title: "Resume"
+    url: /resume/
+  - title: "Contact"
+    url: /contact/
+
+# Custom collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+
